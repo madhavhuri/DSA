@@ -3,7 +3,7 @@ class Solution {
         Map<Integer,Integer>map = new HashMap<>();
         for(int i=0;i<nums.length;i++){
             int num = nums[i];
-            int needed = target - num;
+            int needed = target-num;
             if(map.containsKey(needed)){
                 return new int[]{map.get(needed),i};
             }
